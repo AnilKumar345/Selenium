@@ -1,0 +1,35 @@
+package allinone;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
+
+public class Sikuli_02_Notepad {
+	
+	public static void main(String[] args) throws FindFailed {
+		
+		Screen s = new Screen();
+		
+		Pattern p1 = new Pattern("F:\\Testing\\ThirdPartyDrivers\\sikuli\\practice\\Notepad\\N1.PNG");
+		Pattern p2 = new Pattern("F:\\Testing\\ThirdPartyDrivers\\sikuli\\practice\\Notepad\\N2.PNG");
+		Pattern p3 = new Pattern("F:\\Testing\\ThirdPartyDrivers\\sikuli\\practice\\Notepad\\N3.PNG");
+		Pattern p4 = new Pattern("F:\\Testing\\ThirdPartyDrivers\\sikuli\\practice\\Notepad\\N4.PNG");
+		Pattern p5 = new Pattern("F:\\Testing\\ThirdPartyDrivers\\sikuli\\practice\\Notepad\\N5.PNG");
+		Pattern p6 = new Pattern("F:\\Testing\\ThirdPartyDrivers\\sikuli\\practice\\Notepad\\N6.PNG");
+		
+		s.click(p1);
+		s.type("notepad"+Key.ENTER);
+		s.wait(p2);
+		s.click(p6);
+		s.click(p2);
+		s.click(p3);
+		s.click(p4);
+		s.click(p5);
+	}
+	
+}	
+	
+	
+		
+	
